@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Belajar UTBK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jadwal Belajar UTBK</h1>
+      <p>Lacak kemajuan belajarmu selama 4 bulan!</p>
+    </header>
+
+    <section id="input-data">
+      <h2>Input Data Harian</h2>
+      <form id="study-form">
+        <label for="books">Jumlah OBAT FOKUS yang Dibaca:</label>
+        <input type="number" id="books" min="0" value="0">
+
+        <label for="articles">Jumlah ENGLISH BREAKFAST yang Dibaca:</label>
+        <input type="number" id="articles" min="0" value="0">
+
+        <label for="pages">Jumlah Berapa Lembar Catatan Tulisan yang Ditulis:</label>
+        <input type="number" id="pages" min="0" value="0">
+
+        <label for="questions">Jumlah Soal yang Dikerjakan:</label>
+        <input type="number" id="questions" min="0" value="0">
+
+        <label for="wrong-answers">Jumlah Soal yang Salah:</label>
+        <input type="number" id="wrong-answers" min="0" value="0">
+
+        <button type="submit">Tambahkan Data</button>
+      </form>
+    </section>
+
+    <section id="statistics">
+      <h2>Statistik Belajar</h2>
+      <ul>
+        <li>Total OBAT FOKUS Yang Dibaca: <span id="total-books">0</span></li>
+        <li>Total ENGLISH BREAKFAST Dibaca: <span id="total-articles">0</span></li>
+        <li>Total Berapa Lembar Catatan: <span id="total-pages">0</span></li>
+        <li>Total Soal yang Dikerjakan: <span id="total-questions">0</span></li>
+        <li>Total Soal yang Salah: <span id="total-wrong-answers">0</span></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Jadwal Belajar UTBK | Dibuat dengan semangat sukses!</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
